@@ -9,19 +9,36 @@
     <body>
         <header></header>
         <nav>
+            <ul class=navlist>
+                <li><a  href="/Home" >Home</a></li>
+                <li><a  href="/Register">Register</a></li>
+                <li><a  href="/Login">Login</a></li>
+                <li><a  href="/Help">Help</a></li>
+            </ul>
             <!-- ToDo: An unordered list to represent the menu, 
                        each list item should correspond to the menu items (Home, Register, Login, Help)
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
-            <ul class="navlist">
-            </ul>
          </nav>
         <main>
             <!-- Check Week 4 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                 <input type="text" class="search" id="search" name="search" placeholder="Search"><br>
             </aside>
             <section>
                 <form class="center" novalidate>
+                       <label class="textInput" for="name">Name:</label>
+                    <input type="text" id="name" name="name" required maxlength="50"><br><br>
+
+                    <label class="textInput" for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                     <label class="textInput" for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8"><br><br>
+
+                    <label class="textInput" for="repPassword">Re-type password:</label>
+                    <input type="password" id="repPassword" name="repPassword" required minlength="8"><br><br>
+
                 <!-- ToDo: Implement the form containing 
                            Name - type text
                            email- type text
